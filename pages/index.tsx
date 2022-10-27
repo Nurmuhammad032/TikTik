@@ -9,17 +9,16 @@ interface IProps {
 }
 
 const Home = ({ videos }: IProps) => {
-
+  console.log(videos);
+  
   return (
     <div className="flex flex-col gap-10 videos h-full">
       {videos.length ? (
         videos.map((video: Video) => (
-          // <VideoCard post={video} key={video._id} />
-          <h1>fds</h1>
+          <VideoCard post={video} key={video._id} />
         ))
       ) : (
-        // <NorResults text={"No videos"} />
-        <h1>fdsmas</h1>
+        <NorResults text={"No videos"} />
       )}
     </div>
   );

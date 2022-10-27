@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const NorResults = () => {
-  return (
-    <div>NorResults</div>
-  )
+interface IProps {
+  text: string;
 }
 
-export default NorResults
+const NorResults = ({ text }: IProps) => {
+  return <div>NorResults</div>;
+};
+
+export default NorResults;
